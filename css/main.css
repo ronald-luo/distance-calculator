@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e6e6;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.play-ground {
+  width: 80vw;
+  margin: 0 auto 0 auto;
+}
+
+.play-ground .node {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-animation-name: foo;
+          animation-name: foo;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes foo {
+  100% {
+    background-color: lime;
+    -webkit-box-shadow: 0 0 1em lime;
+            box-shadow: 0 0 1em lime;
+  }
+}
+
+@keyframes foo {
+  100% {
+    background-color: lime;
+    -webkit-box-shadow: 0 0 1em lime;
+            box-shadow: 0 0 1em lime;
+  }
+}
+
+header {
+  background-color: #363c49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto 0 auto;
+  padding: 1em;
+  height: 80vh;
+  width: 80vw;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 9.708vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+header h2 {
+  text-align: center;
+  font-family: "Lora", serif;
+  font-size: 6vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header #try-btn {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0.5em;
+  background-color: red;
+  padding: 0.6em 2em 0.6em 2em;
+  border-radius: 5%;
+}
+
+header #code-btn {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0.5em;
+  padding: 0.6em 2em 0.6em 2em;
+  border: solid 1px red;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  position: absolute;
+  height: 10vh;
+  width: 100vw;
+  background-color: #1d2027;
+  left: 0;
+  bottom: 0;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 5vw 0 0;
+  font-size: 4vw;
+}
+
+footer #rluo {
+  font-size: 6.4721vw;
+}
+/*# sourceMappingURL=main.css.map */
